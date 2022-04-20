@@ -1,7 +1,10 @@
 class Kata {
 
   filter_list(l) {
-    return [1, 2];
+    return l.filter(c => this.isNumeric(c));
+  }
+  isNumeric(n) {
+    return !isNaN(parseFloat(n)) && isFinite(n);
   }
 }
 

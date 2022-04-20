@@ -1,9 +1,9 @@
 const { Kata } = require('../src/kata');
 
 describe('First story', () => {
-  test('GIVEN ... WHEN ... THEN ...', () => {
+  test('GIVEN [1,2,`a`,`b`]  WHEN logic THEN returns [1,2]', () => {
     const kata = new Kata();
-    expect(kata.func()).toStrictEqual();
+    expect(kata.filter_list([1, 2, 'a', 'b'])).toStrictEqual([1, 2]);
   });
 });
 

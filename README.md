@@ -19,27 +19,43 @@
 [Metrics report](metrics.md) 
 [Complexity report](complexity-report.md) 
 
-# KATA's name 
+# List Filtering
 
-... 
+https://www.codewars.com/kata/53dbd5315a3c69eed20002dd
 
 ## Instructions 
 
-... 
+In this kata you will create a function that takes a list of non-negative integers and strings and returns a new list with the strings filtered out.
+Example
+```sh
+filter_list([1,2,'a','b']) == [1,2]
+filter_list([1,'a','b',0,15]) == [1,0,15]
+filter_list([1,2,'aasf','1','123',123]) == [1,2,123]
+```
 
 ## User Stories 
 
 ### 1. First story 
-As a ... 
-I want to ... 
-So that ... 
+As a user
+I want to filter out the strings from an array
+So that create the logic
 
 #### Scenarios 
 
 #### 1. 
-Given ... 
-When ... 
-Then ... 
+Given an array [1,2,'a','b'] 
+When runs the logic
+Then returns [1,2]
+
+#### 2. 
+Given an array [1,'a','b',0,15]
+When runs the logic
+Then returns [1,0,15]
+
+#### 3. 
+Given an array [1,2,'aasf','1','123',123]
+When runs the logic
+Then returns [1,2,123]
 
 # Setting up the environment 
 

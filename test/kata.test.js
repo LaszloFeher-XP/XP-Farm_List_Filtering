@@ -10,6 +10,11 @@ describe('First story', () => {
     const kata = new Kata();
     expect(kata.filter_list([1, 'a', 'b', 0, 15])).toStrictEqual([1, 0, 15]);
   });
+
+  test('GIVEN [1,2,`aasf`,`1`,`123`,123]  WHEN logic THEN returns [1,2,123]', () => {
+    const kata = new Kata();
+    expect(kata.filter_list([1, 2, 'aasf', '1', '123', 123])).toStrictEqual([1, 2, 123]);
+  });
 });
 
 

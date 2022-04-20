@@ -4,7 +4,7 @@ class Kata {
     return l.filter(c => this.isNumeric(c));
   }
   isNumeric(n) {
-    return !isNaN(parseFloat(n)) && isFinite(n);
+    return (typeof n !== 'string');
   }
 }
 
